@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal-window">
+    <div class="modal-box">
+        <span class="close-btn">&times;</span>
+        <div class="modal-img">
+            <img src="img/modal-images.jpg" class="modal-images" alt="Subscribe images" >
+        </div>
+        <div class="modal-content">
+            <h1 class="title">Subscribe to Our Newsletter</h1>
+            <span class="subtitle">
+                Subscribe to our newsletter and <span>Save your 20% money</span> with discount code today.
+            </span>
+            <form>
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+                <div class="do-not-show">
+                    <input type="checkbox" id="doNotShow">
+                    <label for="doNotShow">Do not show this window</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <section class="header-section">
+        <header>
+            <div class="top-bar">
+                    <span class="address">
+                        <svg width="17" height="20">
+                            <use xlink:href="img/sprite.svg#map-pin"></use>
+                        </svg>
+                        Store Location: Lincoln-344, Illinois, Chicago, USA
+                    </span>
+                    <span class="auth-links">
+                        <span>Eng
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span>
+                        <span>  USD 
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span><span>|</span>
+                        <a href="#">Sign In / Sign Up</a>
+                    </span>
+            </div>
+            <div class="main-header container">
+                <div class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-burger"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark"></i>
+                </div>
+                <svg width="183" height="39">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="cart-bar">
+                    <a href="#">
+                        <svg width="32" height="33">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="37" height="38">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                    <div class="cart-info">
+                        <p class="cart-title">Shopping cart:</p>
+                        <p class="cart-price">$57.00</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <button class="categories"><i class="fa-solid fa-bars"></i>All Categories<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <ul class="nav-links">
+                    <li><a href="#">Home<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">Shop<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">Pages<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">Blog<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a href="tel:2195550114" class="phone">
+                    <svg width="28" height="28">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    (219) 555-0114</a>
+            </nav>
+        </header>
+        <div class="hero-section">
+            <div class="hero-image">
+                <img src="img/hero-fruits.png" alt="Fresh organic food">
+            </div>
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to Shopery</span>
+                <h1 class="hero-title">Fresh & Healthy <br> Organic Food</h1>
+                <p class="hero-text">Free shipping on all your order. we deliver, you enjoy</p>
+                <a href="#" class="hero-btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="features container">
+            <div class="feature active">
+                <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                <h3>Free Shipping</h3>
+                <p>Free shipping with discount</p>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Great Support 24/7</h3>
+                <p>Instant access to Contact</p>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                <h3>100% Secure Payment</h3>
+                <p>We ensure your money is save</p>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fa-solid fa-rotate-left"></i></div>
+                <h3>Money-Back Guarantee</h3>
+                <p>30 days money-back guarantee</p>
+            </div>
+        </section>
+        <section class="products">
+            <h2>Introducing Our Products</h2>
+            <ul class="list">
+                <li class="selected">All</li>
+                <li>Vegatable</li>
+                <li>Fruit</li>
+                <li>Meat & Fish</li>
+                <li>View All</li>
+            </ul>
+            <div class="container prod">
+                <div class="product-card sale">
+                    <img src="img/Apple.jpg" alt="product-img">
+                    <span class="name-product">Green Apple</span>
+                    <span class="price">$14.99 <s>$20.99</s></span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Surjapur_Mango.jpg" alt="product-img">
+                    <span class="name-product">Surjapur Mango</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Red_Tomatos.jpg" alt="product-img">
+                    <span class="name-product">Red Tomatos</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Fresh_Cauliflower.jpg" alt="product-img">
+                    <span class="name-product">Fresh Cauliflower</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Green_Lettuce.jpg" alt="product-img">
+                    <span class="name-product">Green Lettuce</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Eggplant1.jpg" alt="product-img">
+                    <span class="name-product">Eggplant</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Green_Chilli.jpg" alt="product-img">
+                    <span class="name-product">Green Chilli</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Eggplant.jpg" alt="product-img">
+                    <span class="name-product">Eggplant</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banners container">
+            <div class="banner milk">
+                <div class="banner-content">
+                    <h3>100% Fresh <br> Cow Milk</h3>
+                    <span>Starting at <b>$14.99</b></span>
+                    <a href="#" class="banner-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="banner drink">
+                <div class="banner-content">
+                    <span class="small">Drink Sale</span>
+                    <h3>Water & <br> Soft Drink</h3>
+                    <a href="#" class="banner-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="banner breakfast">
+                <div class="banner-content">
+                    <span class="small">100% Organic</span>
+                    <h3>Quick <br> Breakfast</h3>
+                    <a href="#" class="banner-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="best-deals">
+        <div class="best-deals-container">
+            <div class="best-deals-left">
+            <img src="img/vegatables.png" alt="Vegetables">
+            </div>
+
+            <div class="best-deals-content">
+            <span class="deal-subtitle">Best Deals</span>
+            <h2 class="deal-title">Our Special Products<br>Deal of the Month</h2>
+
+            <div class="timer">
+                <div class="timer-box">
+                <span class="time">00</span>
+                <span class="label">Days</span>
+                </div>
+                <span class="colon">:</span>
+                <div class="timer-box">
+                <span class="time">02</span>
+                <span class="label">Hours</span>
+                </div>
+                <span class="colon">:</span>
+                <div class="timer-box">
+                <span class="time">18</span>
+                <span class="label">Mins</span>
+                </div>
+                <span class="colon">:</span>
+                <div class="timer-box">
+                <span class="time">46</span>
+                <span class="label">Secs</span>
+                </div>
+            </div>
+
+            <a href="#" class="deal-btn">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="best-deals-right">
+            <img src="img/farmer.png" alt="Farmer">
+            </div>
+        </div>
+        </section>
+        <section class="featured-products">
+            <h1 class="fp-title">Featured Products</h1>
+            <div class="container fp-prod">
+                <div class="product-card sale">
+                    <img src="img/Apple.jpg" alt="product-img">
+                    <span class="name-product">Green Apple</span>
+                    <span class="price">$14.99 <s>$20.99</s></span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Orange.jpg" alt="product-img">
+                    <span class="name-product">Fresh Indian Malta</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Cabbage.jpg" alt="product-img">
+                    <span class="name-product">Chinese cabbage</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/Green_Lettuce.jpg" alt="product-img">
+                    <span class="name-product">Green Lettuce</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/Eggplant.jpg" alt="product-img">
+                    <span class="name-product">Eggplant</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <h2>What our Clients Says</h2>
+            <div class="testimonial-container container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <svg width="40" height="32">
+                            <use xlink:href="img/sprite.svg#vector"></use>
+                        </svg>
+                        <p class="quote">“Aenean et nisi eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem utrices e.”</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/JennyWilson.jpg" alt="Jenny Wilson">
+                        <div>
+                            <p class="name">Jenny Wilson</p>
+                            <p class="role">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <svg width="40" height="32">
+                            <use xlink:href="img/sprite.svg#vector"></use>
+                        </svg>
+                        <p class="quote">“Proin sed neque nec tellus malesuada utrices eget a justo. Nullam a nibh faucibus, semper risus ac, utrices est. Maecenas eget purus in enim imperdiet dapibus in ac mi. Fusce faucibus locus felis”</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/GuyHawkins.jpg" alt="Guy Hawkins">
+                        <div>
+                            <p class="name">Guy Hawkins</p>
+                            <p class="role">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <svg width="40" height="32">
+                            <use xlink:href="img/sprite.svg#vector"></use>
+                        </svg>
+                        <p class="quote">“Nam sed odio diam. Mauris sagittis sapien sed convallis cursus. Proin mattis utrices urna ac eleifend. Cras vel nisi nec lectus sagittis venenatis pulvina”</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/KathrynMurphy.jpg" alt="Kathryn Murphy">
+                        <div>
+                            <p class="name">Kathryn Murphy</p>
+                            <p class="role">Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="video-section">
+                <div class="video-player">
+                    <img src="img/Video.jpg" alt="Video Placeholder" class="video-image">
+                    <div class="video-overlay">
+                        <span class="video-label">Video</span>
+                        <h3 class="video-title">We're the Best Organic Farm in the World</h3>
+                        <button class="video-play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="blog container">
+        <h2 class="blog-title">Latest News</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+            <div class="blog-content">
+                <div class="blog-img">
+                    <img src="img/oranges.jpg" alt="Oranges">
+                    <div class="date">
+                        <span>23</span>
+                        <small>Jan</small>
+                    </div>
+                </div>
+                <h3>Curabitur porttitor orci eget neque accumsan venenatis.</h3>
+                <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue, malesuada et pulvinar at, posuere eu neque.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+            </div>
+
+            <div class="blog-card">
+            <div class="blog-content">
+                <div class="blog-img">
+                    <img src="img/mango-juice.jpg" alt="Mango Juice">
+                    <div class="date">
+                        <span>23</span>
+                        <small>Jan</small>
+                    </div>
+                </div>
+                <h3>Curabitur porttitor orci eget neque accumsan venenatis.</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+            </div>
+
+            <div class="blog-card">
+
+            <div class="blog-content">
+                <div class="blog-img">
+                    <img src="img/fruits.jpg" alt="Mixed Fruits">
+                    <div class="date">
+                        <span>23</span>
+                        <small>Jan</small>
+                    </div>
+                </div>
+                <h3>Curabitur porttitor orci eget neque accumsan venenatis.</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <a href="#" class="read-more">Read More →</a>
+            </div>
+            </div>
+        </div>
+        </section>        
+    </main>    
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <div class="subscribe-content">
+                <hr>
+                <div class="subscribe-form">
+                    <svg width="183" height="39">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                    <div class="subcribe-text">                    
+                        <h3>Subscribe our Newsletter</h3>
+                        <p>Pellentesque eu nibh et mauris congue mattis mattis.</p>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Shopery</h3>
+                <div class="about-text">
+                    <span>Morbi cursus porttitor enim lobortis molestie. 
+                        Duis gravida turpis dui, eget bibendum magna congue nec.</span>
+                    <div class="footer-link">
+                        <a href="tel:(219)-555-0114"><b>(219) 555-0114</b></a>
+                        <span>or</span>
+                        <a href="mailto:Proxy@gmail.com"><b>Proxy@gmail.com</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li>My Account</li>
+                        <li>Order History</li>
+                        <li>Shopping Cart</li>
+                        <li>Wishlist</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Helps</h3>
+                    <ul>
+                        <li>Contact</li>
+                        <li>FAQs</li>
+                        <li>Terms & Condition</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Proxy</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Shop</li>
+                        <li>Products</li>
+                        <li>Track Order</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-insta">
+                <h3>Instagram</h3>
+                <div class="instagram-grid">
+                    <img src="img/insta1.jpg" alt="Instagram 1">
+                    <img src="img/insta2.jpg" alt="Instagram 2">
+                    <img src="img/insta3.jpg" alt="Instagram 3">
+                    <img src="img/insta4.jpg" alt="Instagram 4">
+                    <img src="img/insta5.jpg" alt="Instagram 5">
+                    <img src="img/insta6.jpg" alt="Instagram 6">
+                    <img src="img/insta7.jpg" alt="Instagram 7">
+                    <img src="img/insta8.jpg" alt="Instagram 8">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Shopery eCommerce &copy; 2021 All Rights Reserved</p>
+            <div class="footer-payment">
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#applePay"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#visa"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#discover"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#masterCard"></use>
+                    </svg>
+                    <svg width="65" height="32">
+                        <use xlink:href="img/sprite.svg#secure"></use>
+                    </svg>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countdown@2.6.0/countdown.min.js"></script>
+</body>
+</html>
