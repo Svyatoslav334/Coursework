@@ -221,27 +221,70 @@ h2 {
     order: 1;
 }
 
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #002603;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.hero-arrow:hover {
+    background: #00B207;
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.hero-arrow.left {
+    left: 15px;
+}
+
+.hero-arrow.right {
+    right: 15px;
+}
+
 .hero-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
-
 .hero-dots .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: #ccc;
     border-radius: 50%;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
-
 .hero-dots .dot.active {
     background: #00B207;
-    transform: scaleX(2);
+    width: 15px;
+    border-radius: 20px;
 }
+
+.hero-slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-slide.active {
+    display: flex;
+}
+
 
 .features {
     display: grid;
@@ -339,7 +382,7 @@ h2 {
 }
 
 .product-card {
-    flex: 0 0 50%;
+    flex: 0 0 70%;
     border: 1px solid #DAE5DA;
     background-color: #FFFFFF;
     padding: 10px;
@@ -971,7 +1014,7 @@ footer {
 
 .footer-content {
     display: flex;
-    gap: 80px;
+    gap: 40px;
 }
 
 .footer-about .about-text {
@@ -1244,7 +1287,11 @@ footer {
     .hero-section {
         flex-direction: row;
     }
-
+    .hero-slide {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
     .hero-content {
         text-align: left;
     }
@@ -1643,9 +1690,6 @@ footer {
         width: 448px;
     }
 
-    footer {
-        padding: 40px 300px;
-    }
 
     .footer-container {
         flex-direction: row;
@@ -1657,7 +1701,6 @@ footer {
     }
 
     .footer-insta .instagram-grid {
-        grid-template-columns: 25% 25% 25% 25%;
         width: 100%;
         gap: 5px;
         justify-items: center;
@@ -1674,6 +1717,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin: 30px 200px;
     }
 
     .footer-payment img {

@@ -83,3 +83,34 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(updateTimer, 1000);
   updateTimer();
 });
+
+
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.hero-dots .dot');
+const prevBtn = document.querySelector('.hero-arrow.left');
+const nextBtn = document.querySelector('.hero-arrow.right');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+    });
+}
+
+nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+});
+
+prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+});
+
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+        currentSlide = i;
+        showSlide(currentSlide);
+    });
+});
