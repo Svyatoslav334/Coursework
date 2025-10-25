@@ -66,7 +66,7 @@ animateBlocks(".testimonial-card", "scale-in");
 animateBlocks(".blog-card", "fade-in-left");
 
 document.addEventListener("DOMContentLoaded", function () {
-  const endDate = new Date("2025-09-30T23:59:59");
+  const endDate = new Date("2025-11-16T23:59:59");
 
   const timerBoxes = document.querySelectorAll(".timer-box .time");
 
@@ -114,6 +114,7 @@ dots.forEach((dot, i) => {
         showSlide(currentSlide);
     });
 });
+
 
 
 
