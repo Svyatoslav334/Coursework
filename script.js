@@ -114,3 +114,23 @@ dots.forEach((dot, i) => {
         showSlide(currentSlide);
     });
 });
+
+let startX = 0;
+
+slides.forEach(slide => {
+    slide.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+    });
+
+    slide.addEventListener('touchend', e => {
+        let endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        } else if (endX - startX > 50) {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    });
+});
+
