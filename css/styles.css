@@ -619,16 +619,16 @@ h2 {
 }
 
 .banner.milk {
-    background-image: url('/img/background/BG3.jpg');
+    background-image: url('img/background/BG3.jpg');
 }
 
 .banner.drink {
-    background-image: url('/img/background/BG2.jpg');
+    background-image: url('img/background/BG2.jpg');
     color: #002603;
 }
 
 .banner.breakfast {
-    background-image: url('/img/background/BG1.jpg');
+    background-image: url('img/background/BG1.jpg');
     color: #002603;
 }
 
@@ -2335,7 +2335,7 @@ footer {
         display: block;
         padding: 30px 300px;
         max-height: 120px;
-        background-image: url(/img/background/Breadcrumbs.png);
+        background-image: url(img/background/Breadcrumbs.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -2347,7 +2347,7 @@ footer {
 
     .discount-shop {
         display: block;
-        background-image: url(/img/background/discount-bg.jpg);
+        background-image: url(img/background/discount-bg.jpg);
         background-position: center;
         background-position-y: 55px;
         border-radius: 12px;
@@ -3011,7 +3011,6 @@ footer {
     transform: rotate(180deg);
 }
 
-/* Sidebar Content - hidden by default on mobile */
 .sidebar-content {
     display: none;
     overflow: hidden;
@@ -3034,7 +3033,6 @@ footer {
     }
 }
 
-/* Search */
 .sidebar-search {
     margin-bottom: 16px;
 }
@@ -3067,7 +3065,6 @@ footer {
     color: #999;
 }
 
-/* Sidebar Sections */
 .sidebar-section {
     background: #fff;
     border-radius: 8px;
@@ -3082,7 +3079,6 @@ footer {
     margin-bottom: 16px;
 }
 
-/* Categories List */
 .categories-list {
     list-style: none;
     padding: 0;
@@ -3141,7 +3137,6 @@ footer {
     color: #fff;
 }
 
-/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -3166,7 +3161,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* Recent Posts */
 .recent-posts {
     display: flex;
     flex-direction: column;
@@ -3221,7 +3215,6 @@ footer {
     font-size: 12px;
 }
 
-/* Tablet: 768px */
 @media (min-width: 768px) {
     .sidebar-section {
         padding: 24px 20px;
@@ -3242,7 +3235,6 @@ footer {
     }
 }
 
-/* Desktop: 1200px */
 @media (min-width: 1200px) {
     .blogs {
         flex-direction: row;
@@ -3259,13 +3251,10 @@ footer {
         max-width: 424px;
         margin-top: 20px;
     }
-
-    /* Hide filter toggle button on desktop */
     .filter-toggle {
         display: none;
     }
 
-    /* Show sidebar content by default on desktop */
     .sidebar-content {
         display: block;
     }
