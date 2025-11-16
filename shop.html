@@ -1,36 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecobazar</title>
+    <title>Магазин</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="modal-window">
-    <div class="modal-box">
-        <span class="close-btn">&times;</span>
-        <div class="modal-img">
-            <img src="img/avatars/modal-images.jpg" class="modal-images" alt="Зображення підписки" >
-        </div>
-        <div class="modal-content">
-            <h1 class="title">Підпишіться на нашу розсилку</h1>
-            <span class="subtitle">
-                Підпишіться на нашу розсилку та <span>заощадьте свої 20% грошей</span> допомогою коду знижки вже сьогодні.
-            </span>
-            <form>
-                <input type="email" placeholder="Ваша електронна адреса" required>
-                <button type="submit">Підпишіться</button>
-                <div class="do-not-show">
-                    <input type="checkbox" id="doNotShow">
-                    <label for="doNotShow">Не показувати це вікно</label>
-                </div>
-            </form>
-        </div>
-    </div>
-    </div>
     <section class="header-section">
         <header>
             <div class="top-bar">
@@ -83,23 +61,11 @@
                     </div>
                 </div>
             </div>
-            <nav class="nav-bar">
-                <div class="categories-wrapper">
-                    <button class="categories"><i class="fa-solid fa-bars"></i>Всі категорії</button>
-                    <ul class="categories-dropdown">
-                        <li><a href="#">Свіжі фрукти</a></li>
-                        <li><a href="#">Овочі</a></li>
-                        <li><a href="#">Кулінарія</a></li>
-                        <li><a href="#">Закуски</a></li>
-                        <li><a href="#">Напої</a></li>
-                        <li><a href="#">Краса та здоров’я</a></li>
-                        <li><a href="#">Хліб та хлібобулочні вироби</a></li>
-                    </ul>
-                </div>
+            <nav class="nav-bar nav-shop">
                 <ul class="nav-links">
-                    <li><a href="/index.html">Головна<i class="fa-solid fa-chevron-up"></i></a></li>
-                    <li><a href="/shop.html">Магазин<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="/blog.html">Блог<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li class = "main"><a href="index.html">Головна<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="shop.html">Магазин<i class="fa-sharp fa-solid fa-chevron-up"></i></a></li>
+                    <li><a href="blog.html">Блог<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
                     <li><a href="#">Про нас</a></li>
                     <li><a href="#">Контакти</a></li>
                 </ul>
@@ -110,88 +76,249 @@
                     (219) 555-0114</a>
             </nav>
         </header> 
-        <div class="hero-section">
-            <div class="hero-arrows">
-                <button class="hero-arrow left"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="hero-arrow right"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="hero-slide active">
-                <div class="hero-image">
-                    <img src="img/background/hero-fruits.png" alt="Свіжі органічні продукти">
-                </div>
-                <div class="hero-content">
-                    <span class="hero-subtitle">Ласкаво просимо до Shopery</span>
-                    <h1 class="hero-title">Свіжі та здорові <br> органічні продукти</h1>
-                    <p class="hero-text">Безкоштовна доставка всіх замовлень. Ми доставляємо – ви насолоджуєтесь.</p>
-                    <a href="#" class="hero-btn">Купити зараз <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="hero-slide">
-                <div class="hero-image">
-                    <img src="img/background/hero-veggies.png" alt="Свіжі овочі">
-                </div>
-                <div class="hero-content">
-                    <span class="hero-subtitle">Спеціальна пропозиція</span>
-                    <h1 class="hero-title">Свіжі овочі щодня</h1>
-                    <p class="hero-text">Смачні та корисні овочі прямо з ферми до вашого столу.</p>
-                    <a href="#" class="hero-btn">Купити зараз <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="hero-slide">
-                <div class="hero-image">
-                    <img src="img/background/hero-organic.png" alt="Органічні продукти">
-                </div>
-                <div class="hero-content">
-                    <span class="hero-subtitle">Екологічно чисто</span>
-                    <h1 class="hero-title">Органічні продукти для вас</h1>
-                    <p class="hero-text">Здорове харчування — легке та доступне щодня.</p>
-                    <a href="#" class="hero-btn">Купити зараз <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="hero-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
     </section>
-    <main>
-        <section class="features container">
-            <div class="feature active">
-                <div class="icon"><i class="fa-solid fa-truck"></i></div>
-                <h3>Безкоштовна доставка</h3>
-                <p>Доставка зі знижкою</p>
+    <section class="shop-bg">
+        <span><i class="fa-solid fa-house"></i></span>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Категорії</span>
+        <span id="category-separator"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="active"></span>
+    </section>
+    <main id="products-list-shop">
+        <div class="filter-toggle">
+            <button id="filter-toggle-btn" class="filter-toggle-btn">
+                <i class="fa-solid fa-chevron-down"></i> Фільтри
+            </button>
+        </div>
+        <section class="filter-panel container">
+            <div class="filter-header">
+                <h2>Фільтри</h2>
+                <button id="reset-filters">Скинути</button>
             </div>
-            <div class="feature">
-                <div class="icon"><i class="fa-solid fa-headset"></i></div>
-                <h3>Підтримка 24/7</h3>
-                <p>Миттєвий контакт з нами</p>
+
+            <div class="filter-group">
+                <h3>Категорії <i class="fa-solid fa-chevron-down"></i></h3>
+                <ul class="filter-list">
+                    <li><label><input type="radio" name="category" value="Свіжі фрукти"> Свіжі фрукти (134)</label></li>
+                    <li><label><input type="radio" name="category" value="Овочі"> Овочі (150)</label></li>
+                    <li><label><input type="radio" name="category" value="Кулінарія"> Кулінарія (54)</label></li>
+                    <li><label><input type="radio" name="category" value="Закуски"> Закуски (47)</label></li>
+                    <li><label><input type="radio" name="category" value="Напої"> Напої (43)</label></li>
+                    <li><label><input type="radio" name="category" value="Краса та здоров'я"> Краса та здоров'я (38)</label></li>
+                    <li><label><input type="radio" name="category" value="Хліб та випічка"> Хліб та випічка (15)</label></li>
+                </ul>
             </div>
-            <div class="feature">
-                <div class="icon"><i class="fa-solid fa-lock"></i></div>
-                <h3>100% Безпечна оплата</h3>
-                <p>Ваші гроші під надійним захистом</p>
+
+            <div class="filter-group">
+                <h3>Ціна <i class="fa-solid fa-chevron-down"></i></h3>
+                <div class="price-range">
+                    <div class="dual-slider">
+                        <div class="slider-track"></div>
+                        <input type="range" id="price-min" min="0" max="1000" value="0" class="range-input">
+                        <input type="range" id="price-max" min="0" max="1000" value="1000" class="range-input">
+                        <div class="slider-fill"></div>
+                    </div>
+                    <div class="price-values">
+                        <span>Ціна: <span id="min-value">0</span> - <span id="max-value">1000</span></span>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <div class="icon"><i class="fa-solid fa-rotate-left"></i></div>
-                <h3>Гарантія повернення</h3>
-                <p>30 днів на повернення товару</p>
+
+            <div class="filter-group">
+                <h3>Рейтинг <i class="fa-solid fa-chevron-down"></i></h3>
+                <div class="rating-filter">
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="5">
+                        <svg width="98" height="18" class="rating-svg">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        5
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="4">
+                        <svg width="98" height="18" class="rating-svg rating-4">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        4.0+
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="3">
+                        <svg width="98" height="18" class="rating-svg rating-3">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        3.0+
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="2">
+                        <svg width="98" height="18" class="rating-svg rating-2">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        2.0+
+                    </label>
+                    <label class="rating-option">
+                        <input type="checkbox" name="rating" value="1">
+                        <svg width="98" height="18" class="rating-svg rating-1">
+                            <use xlink:href="img/sprite.svg#five-stars"></use>
+                        </svg>
+                        1.0+
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Популярні теги <i class="fa-solid fa-chevron-down"></i></h3>
+                <div class="tags">
+                    <button class="tag-btn active">Здорове</button>
+                    <button class="tag-btn">Низькокалорійне</button>
+                    <button class="tag-btn">Вегетаріанське</button>
+                    <button class="tag-btn">Для дітей</button>
+                    <button class="tag-btn">Вітаміни</button>
+                    <button class="tag-btn">Хліб</button>
+                    <button class="tag-btn">М'ясо</button>
+                    <button class="tag-btn">Закуски</button>
+                    <button class="tag-btn">Обід</button>
+                    <button class="tag-btn">Вечеря</button>
+                    <button class="tag-btn">Сніданок</button>
+                    <button class="tag-btn">Фрукти</button>
+                </div>
+            </div>
+            <div class="discount-shop">
+                <div class="discount-text">
+                    <p><span>79%</span> Discount</p>
+                    <p>on your first order</p>
+                    <a href="#" class="shop-now">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="sale-products">
+                <p class="sale-title">Sale Products</p>
+
+                <div class="sale-products-card">
+                    <img src="img/products/Red_Capsicum.png" alt="Red Capsicum">
+                    <div class="sale-products-card-content">
+                        <p>Red Capsicum</p>
+                        <span>$32.00 <b>$20.99</b></span>
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="sale-products-card">
+                    <img src="img/products/Surjapur_Mango.jpg" alt="Chanise Cabbage">
+                    <div class="sale-products-card-content">
+                        <p>Chanise Cabbage</p>
+                        <span>$24.00 <b>$20.99</b></span>
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="sale-products-card">
+                    <img src="img/products/Eggplant1.jpg" alt="Green Capsicum">
+                    <div class="sale-products-card-content">
+                        <p>Green Capsicum</p>
+                        <span>$32.00 <b>$20.99</b></span>
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="products">
-            <h2>Представляємо наші продукти</h2>
-            <ul class="list">
-                <li class="selected">Усі</li>
-                <li>Овочі</li>
-                <li>Фрукти</li>
-                <li>М'ясо та риба</li>
-                <li>Переглянути всі</li>
-            </ul>
-            <div class="container prod">
+        
+    <section class="products-list-container">
+            <div class="products-list-header">
+                <div class="sort">
+                    <span>Сортувати:</span>
+                    <select name="" id="">
+                        <option value="">Нові</option>
+                        <option value="">Рейтинг</option>
+                        <option value="">Відгуки</option>
+                    </select>
+                </div>
+                <div class="results">
+                    <span>52</span> Результати знайдено
+                </div>
+            </div>
+            <div class="products-list">
                 <div class="product-card sale">
                     <img src="img/products/Apple.jpg" alt="Фото продукту">
                     <span class="name-product">Зелене яблуко</span>
                     <span class="price">$14.99 <s>$20.99</s></span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/products/Surjapur_Mango.jpg" alt="Фото продукту">
+                    <span class="name-product">Манго Сурджапур</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/products/Surjapur_Mango.jpg" alt="Фото продукту">
+                    <span class="name-product">Манго Сурджапур</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/products/Surjapur_Mango.jpg" alt="Фото продукту">
+                    <span class="name-product">Манго Сурджапур</span>
+                    <span class="price">$14.99</span>
+                    <div class="rating">
+                        <svg width="98" height="18">
+                            <use xlink:href="img/sprite.svg#rating"></use>
+                        </svg>
+                    </div>
+                    <div class="add-to-cart">
+                        <svg class="default" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                        </svg>
+                        <svg class="hover" width="50" height="50">
+                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/products/Surjapur_Mango.jpg" alt="Фото продукту">
+                    <span class="name-product">Манго Сурджапур</span>
+                    <span class="price">$14.99</span>
                     <div class="rating">
                         <svg width="98" height="18">
                             <use xlink:href="img/sprite.svg#rating"></use>
@@ -279,166 +406,6 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="img/products/Eggplant1.jpg" alt="Фото продукту">
-                    <span class="name-product">Зелений перець</span>
-                    <span class="price">$14.99</span>
-                    <div class="rating">
-                        <svg width="98" height="18">
-                            <use xlink:href="img/sprite.svg#rating"></use>
-                        </svg>
-                    </div>
-                    <div class="add-to-cart">
-                        <svg class="default" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
-                        </svg>
-                        <svg class="hover" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/products/Green_Chilli.jpg" alt="Фото продукту">
-                    <span class="name-product">Зелений чілі</span>
-                    <span class="price">$14.99</span>
-                    <div class="rating">
-                        <svg width="98" height="18">
-                            <use xlink:href="img/sprite.svg#rating"></use>
-                        </svg>
-                    </div>
-                    <div class="add-to-cart">
-                        <svg class="default" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
-                        </svg>
-                        <svg class="hover" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/products/Eggplant.jpg" alt="Фото продукту">
-                    <span class="name-product">Баклажан</span>
-                    <span class="price">$14.99</span>
-                    <div class="rating">
-                        <svg width="98" height="18">
-                            <use xlink:href="img/sprite.svg#rating"></use>
-                        </svg>
-                    </div>
-                    <div class="add-to-cart">
-                        <svg class="default" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
-                        </svg>
-                        <svg class="hover" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="banners container">
-            <div class="banner milk">
-                <div class="banner-content">
-                    <h3>100% Свіже <br> Коров’яче молоко</h3>
-                    <span>Від <b>$14.99</b></span>
-                    <a href="#" class="banner-btn">Купити <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="banner drink">
-                <div class="banner-content">
-                    <span class="small">Акція на напої</span>
-                    <h3>Вода та <br> Безалкогольні<br> напої</h3>
-                    <a href="#" class="banner-btn">Купити <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="banner breakfast">
-                <div class="banner-content">
-                    <span class="small">100% Органічно</span>
-                    <h3>Швидкий <br> Сніданок</h3>
-                    <a href="#" class="banner-btn">Купити <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
-        <section class="best-deals">
-        <div class="best-deals-container">
-            <div class="best-deals-left">
-            <img src="img/background/vegatables.png" alt="Овочі">
-            </div>
-
-            <div class="best-deals-content">
-            <span class="deal-subtitle">Кращі пропозиції</span>
-            <h2 class="deal-title">Наші спеціальні продукти<br>Пропозиція місяця</h2>
-
-            <div class="timer">
-                <div class="timer-box">
-                <span class="time">00</span>
-                <span class="label">Днів</span>
-                </div>
-                <span class="colon">:</span>
-                <div class="timer-box">
-                <span class="time">02</span>
-                <span class="label">Годин</span>
-                </div>
-                <span class="colon">:</span>
-                <div class="timer-box">
-                <span class="time">18</span>
-                <span class="label">Хвилин</span>
-                </div>
-                <span class="colon">:</span>
-                <div class="timer-box">
-                <span class="time">46</span>
-                <span class="label">Секунд</span>
-                </div>
-            </div>
-
-            <a href="#" class="deal-btn">Купити <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-
-            <div class="best-deals-right">
-            <img src="img/avatars/farmer.png" alt="Фермер">
-            </div>
-        </div>
-        </section>
-        <section class="featured-products">
-            <h1 class="fp-title">Рекомендовані товари</h1>
-            <div class="container fp-prod">
-                <div class="product-card sale">
-                    <img src="img/products/Apple.jpg" alt="Фото продукту">
-                    <span class="name-product">Зелене яблуко</span>
-                    <span class="price">$14.99 <s>$20.99</s></span>
-                    <div class="rating">
-                        <svg width="98" height="18">
-                            <use xlink:href="img/sprite.svg#rating"></use>
-                        </svg>
-                    </div>
-                    <div class="add-to-cart">
-                        <svg class="default" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
-                        </svg>
-                        <svg class="hover" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="img/products/Orange.jpg" alt="Фото продукту">
-                    <span class="name-product">Свіжа індійська мільта</span>
-                    <span class="price">$14.99</span>
-                    <div class="rating">
-                        <svg width="98" height="18">
-                            <use xlink:href="img/sprite.svg#rating"></use>
-                        </svg>
-                    </div>
-                    <div class="add-to-cart">
-                        <svg class="default" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
-                        </svg>
-                        <svg class="hover" width="50" height="50">
-                            <use xlink:href="img/sprite.svg#add-to-cart"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="product-card">
                     <img src="img/products/Cabbage.jpg" alt="Фото продукту">
                     <span class="name-product">Китайська капуста</span>
                     <span class="price">$14.99</span>
@@ -456,10 +423,9 @@
                         </svg>
                     </div>
                 </div>
-
                 <div class="product-card">
-                    <img src="img/products/Green_Lettuce.jpg" alt="Фото продукту">
-                    <span class="name-product">Зелений салат</span>
+                    <img src="img/products/Eggplant.jpg" alt="Фото продукту">
+                    <span class="name-product">Баклажан</span>
                     <span class="price">$14.99</span>
                     <div class="rating">
                         <svg width="98" height="18">
@@ -494,120 +460,22 @@
                     </div>
                 </div>
             </div>
+            <nav class="pagination">
+                <button class="prev">&lt;</button>
+                <span class="page-numbers">
+                    <span class="active">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span class="dots">&hellip;</span>
+                    <a href="#">21</a>
+                </span>
+                <button class="next">&gt;</button>
+            </nav>
         </section>
-        <section class="testimonial">
-            <h2>Що говорять наші клієнти</h2>
-            <div class="testimonial-container container">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <svg width="40" height="32">
-                            <use xlink:href="img/sprite.svg#vector"></use>
-                        </svg>
-                        <p class="quote">“Замовляю тут уже кілька місяців — завжди свіжі фрукти та овочі. Доставка швидка, а продукти завжди високої якості!”</p>
-                    </div>
-                    <div class="author">
-                        <img src="img/avatars/JennyWilson.jpg" alt="Jenny Wilson">
-                        <div>
-                            <p class="name">Jenny Wilson</p>
-                            <p class="role">Клієнт</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <svg width="40" height="32">
-                            <use xlink:href="img/sprite.svg#vector"></use>
-                        </svg>
-                        <p class="quote">“Мені подобається асортимент органічних продуктів. Сайт зручний, акції вигідні, а підтримка клієнтів завжди допоможе.”</p>
-                    </div>
-                    <div class="author">
-                        <img src="img/avatars/GuyHawkins.jpg" alt="Guy Hawkins">
-                        <div>
-                            <p class="name">Guy Hawkins</p>
-                            <p class="role">Клієнт</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <svg width="40" height="32">
-                            <use xlink:href="img/sprite.svg#vector"></use>
-                        </svg>
-                        <p class="quote">“Нарешті знайшла магазин, де все натуральне та свіже. Дуже зручно замовляти онлайн та отримувати продукти додому.”</p>
-                    </div>
-                    <div class="author">
-                        <img src="img/avatars/KathrynMurphy.jpg" alt="Kathryn Murphy">
-                        <div>
-                            <p class="name">Kathryn Murphy</p>
-                            <p class="role">Клієнт</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="video-section">
-                <div class="video-player">
-                    <img src="img/background/Video.jpg" alt="Відео плейсхолдер" class="video-image">
-                    <div class="video-overlay">
-                        <span class="video-label">Відео</span>
-                        <h3 class="video-title">Ми найкраща органічна ферма у світі</h3>
-                        <button class="video-play-btn">
-                            <i class="fa-solid fa-play"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="blog container">
-            <h2 class="blog-title">Останні новини</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-img">
-                            <img src="img/background/oranges.jpg" alt="Апельсини">
-                            <div class="date">
-                                <span>23</span>
-                                <small>Січ.</small>
-                            </div>
-                        </div>
-                        <h3>Здорове харчування — шлях до вашого добробуту.</h3>
-                        <p>Обирайте лише свіжі, натуральні продукти, які підтримують енергію, гарне самопочуття та міцне здоров’я кожного дня.</p>
-                        <a href="#" class="read-more">Читати далі →</a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-img">
-                            <img src="img/background/mango-juice.jpg" alt="Сік манго">
-                            <div class="date">
-                                <span>23</span>
-                                <small>Січ.</small>
-                            </div>
-                        </div>
-                        <h3>Як натуральні соки допомагають підтримувати імунітет.</h3>
-                        <p>Пийте свіжовичавлені соки з фруктів і овочів, щоб наповнити організм вітамінами та природною енергією кожного дня.</p>
-                        <a href="#" class="read-more">Читати далі →</a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-img">
-                            <img src="img/background/fruits.jpg" alt="Асорті фруктів">
-                            <div class="date">
-                                <span>23</span>
-                                <small>Січ.</small>
-                            </div>
-                        </div>
-                        <h3>Топ-5 сезонних фруктів для здорового раціону.</h3>
-                        <p>Дізнайтесь, які фрукти зараз найкорисніші, і як вони допомагають підтримувати баланс поживних речовин у вашому тілі.</p>
-                        <a href="#" class="read-more">Читати далі →</a>
-                    </div>
-                </div>
-            </div>
-        </section>  
-    </main>    
-    <section class="subscribe-section sub-main">
+    </main>
+    <section class="subscribe-section">
         <div class="subscribe-container">
             <div class="subscribe-content">
                 <hr>
@@ -713,6 +581,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/countdown@2.6.0/countdown.min.js"></script>
+    <script src="js/script-shop.js"></script>
 </body>
 </html>

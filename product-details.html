@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі товару</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="header-section">
+        <header>
+            <div class="top-bar">
+                    <span class="address">
+                        <svg width="17" height="20">
+                            <use xlink:href="img/sprite.svg#map-pin"></use>
+                        </svg>
+                        Місцезнаходження магазину: Лінкольн-344, Іллінойс, Чикаго, США
+                    </span>
+                    <span class="auth-links">
+                        <span>Укр
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span>
+                        <span>  Грн 
+                            <svg width="9" height="6">
+                                <use xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </span><span>|</span>
+                        <a href="#">Увійти / Зареєструватися</a>
+                    </span>
+            </div>
+            <div class="main-header container">
+                <div class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-burger"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark"></i>
+                </div>
+                <svg width="183" height="39">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit">Пошук</button>
+                </div>
+                <div class="cart-bar">
+                    <a href="#">
+                        <svg width="32" height="33">
+                            <use xlink:href="img/sprite.svg#heart"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="37" height="38">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                    <div class="cart-info">
+                        <p class="cart-title">Кошик:</p>
+                        <p class="cart-price">$57.00</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-bar nav-shop">
+                <ul class="nav-links">
+                    <li class = "main"><a href="index.html">Головна<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="shop.html">Магазин<i class="fa-sharp fa-solid fa-chevron-up"></i></a></li>
+                    <li><a href="#">Сторінки<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="blog.html">Блог<i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+                <a href="tel:2195550114" class="phone">
+                    <svg width="28" height="28">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    (219) 555-0114</a>
+            </nav>
+        </header> 
+    </section>
+    <section class="shop-bg">
+            <span><i class="fa-solid fa-house"></i></a></span>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <span>Категорії</span>
+            <span id="category-separator"><i class="fa-solid fa-chevron-right"></i></span>
+            <span>Овочі</span>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="active">Chinese Cabbage</span>
+    </section>
+    <main class="product-page container">
+    <section class="pd-top">
+        <div class="pd-gallery">
+
+            <div class="pd-thumbs">
+                <img src="img/products/cabbage-1.jpg" class="pd-thumb active" alt="">
+                <img src="img/products/cabbage-2.jpg" class="pd-thumb" alt="">
+                <img src="img/products/cabbage-3.jpg" class="pd-thumb" alt="">
+                <img src="img/products/cabbage-4.jpg" class="pd-thumb" alt="">
+            </div>
+
+            <div class="pd-image">
+                <img src="img/products/cabbage.jpg" alt="" class="pd-main-img">
+            </div>
+
+        </div>
+
+        <div class="pd-info">
+
+            <h1 class="pd-title">Chinese Cabbage <span class="pd-stock in">IN STOCK</span></h1>
+
+            <div class="pd-rating">
+                <svg width="98" height="18">
+                    <use xlink:href="img/sprite.svg#rating"></use>
+                </svg>
+                <span class="pd-rating-num">(4 Перегляда)</span>
+                
+            </div>
+
+            <div class="pd-price">
+                <span class="old">$48.00</span>
+                <span class="new">$17.28</span>
+            </div>
+        <div class="pd-brand-share">
+            <div class="pd-brand">
+                <span>Brand:</span> <b>EcoBazar</b>
+            </div>
+
+            <div class="pd-share">
+                <span>Share item:</span>
+                <div class="pd-share-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+            <p class="pd-desc">
+                Duis placerat, urna sed posuere volutpat, neque erat sagittis nunc, eget rutrum massa lectus vel lorem. 
+                Mauris ultrices, massa eu aliquet cursus, arcu lorem gravida eros.
+            </p>
+
+            <div class="pd-actions">
+                <div class="pd-qty">
+                    <button class="pd-dec">−</button>
+                    <input type="text" value="1">
+                    <button class="pd-inc">+</button>
+                </div>
+
+                <button class="pd-add">Add to Cart</button>
+            </div>
+
+            <ul class="pd-meta">
+                <li><b>Category:</b> Vegetables</li>
+                <li><b>Tags:</b> Vegetable, Healthy, Chinese Cabbage, Greens</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+<section class="pd-tabs">
+
+    <div class="pd-tabs-head">
+        <button class="pd-tab active">Descriptions</button>
+        <button class="pd-tab">Additional Information</button>
+        <button class="pd-tab">Customer Feedback</button>
+    </div>
+
+    <div class="pd-tabs-body">
+        <div class="pd-tab-content">
+            <p>
+                Sed commodo nibh urna ut diam posuere fermentum. In ultrices imperdiet posuere viverra. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                luctus mauris in magna dictum porta.
+            </p>
+
+            <ul class="pd-list">
+                <li>Fresh & natural vegetables</li>
+                <li>Packed carefully</li>
+                <li>Long shelf life</li>
+                <li>100% quality guaranteed</li>
+            </ul>
+        </div>
+        <div class="pd-tab-content">
+            <ul class="pd-additional-info">
+                <li><b>Weight:</b> 03</li>
+                <li><b>Color:</b> Green</li>
+                <li><b>Type:</b> Organic</li>
+                <li><b>Category:</b> Vegetables</li>
+                <li><b>Stock Status:</b> Available(5,413)</li>
+                <li><b>Tags:</b> Vegetables, Healthy, Chinese, Cabbage, Green Cabbage,</li>
+            </ul>
+        </div>
+        <div class="pd-tab-content active">
+            <div class="pb-customer-feedback">
+
+            </div>
+        </div>
+
+        <div class="pd-video">
+            <div class="pd-video-box">
+                <img src="img/avatars/farmer-video.jpg" alt="video preview" class="pd-video-poster">
+
+                <button class="pd-play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+
+            <div class="pd-video-info">
+                <div class="pd-vi-block">
+                    <svg width="40" height="32">
+                        <use xlink:href="img/sprite.svg#price-tag"></use>
+                    </svg>
+                    <div>
+                        <h3>64% Discount</h3>
+                        <p>Only for today</p>
+                    </div>
+                </div>
+                <div class="pd-vi-block">
+                    <svg width="40" height="32">
+                        <use xlink:href="img/sprite.svg#leaf"></use>
+                    </svg>
+                    <div>
+                        <h3>100% Organic</h3>
+                        <p>Healthy vegetables</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    <section class="pd-related">
+        <h2>Related Products</h2>
+
+        <div class="pd-related-grid">
+
+            <div class="product-card sale">
+                <img src="img/products/Apple.jpg" alt="">
+                <span class="name-product">Green Apple</span>
+                <span class="price">$14.99 <s>$20.99</s></span>
+                <div class="rating">
+                    <svg width="98" height="18">
+                        <use xlink:href="img/sprite.svg#rating"></use>
+                    </svg>
+                </div>
+                <div class="add-to-cart">
+                    <svg class="default" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                    </svg>
+                    <svg class="hover" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/products/Fresh_Cauliflower.jpg" alt="">
+                <span class="name-product">Cauliflower</span>
+                <span class="price">$12.99</span>
+                <div class="rating">
+                    <svg width="98" height="18">
+                        <use xlink:href="img/sprite.svg#rating"></use>
+                    </svg>
+                </div>
+                <div class="add-to-cart">
+                    <svg class="default" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                    </svg>
+                    <svg class="hover" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/products/Eggplant1.jpg" alt="">
+                <span class="name-product">Green Capsicum</span>
+                <span class="price">$4.99</span>
+                <div class="rating">
+                    <svg width="98" height="18">
+                        <use xlink:href="img/sprite.svg#rating"></use>
+                    </svg>
+                </div>
+                <div class="add-to-cart">
+                    <svg class="default" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                    </svg>
+                    <svg class="hover" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/products/Green_Lettuce.jpg" alt="">
+                <span class="name-product">Indian Ginger</span>
+                <span class="price">$9.49</span>
+                <div class="rating">
+                    <svg width="98" height="18">
+                        <use xlink:href="img/sprite.svg#rating"></use>
+                    </svg>
+                </div>
+                <div class="add-to-cart">
+                    <svg class="default" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart-alt"></use>
+                    </svg>
+                    <svg class="hover" width="50" height="50">
+                        <use xlink:href="img/sprite.svg#add-to-cart"></use>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <div class="subscribe-content">
+                <hr>
+                <div class="subscribe-form">
+                    <svg width="183" height="39">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                    <div class="subscribe-text">                    
+                        <h3>Підпишіться на нашу розсилку</h3>
+                        <p>Будьте в курсі акцій, новинок та корисних порад для здорового харчування щодня.</p>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Ваша електронна адреса" required>
+                        <button type="submit">Підписатись</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Про EcoBazar</h3>
+                <div class="about-text">
+                    <span>EcoBazar — це ваш онлайн-супермаркет свіжих та органічних продуктів. 
+                        Ми дбаємо про якість кожного товару, щоб ви отримували лише найкраще щодня.</span>
+                    <div class="footer-link">
+                        <a href="tel:(219)-555-0114"><b>(219) 555-0114</b></a>
+                        <span>|</span>
+                        <a href="mailto:Proxy@gmail.com"><b>Proxy@gmail.com</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Мій Акаунт</h3>
+                    <ul>
+                        <li>Мій Акаунт</li>
+                        <li>Історія Замовлень</li>
+                        <li>Кошик</li>
+                        <li>Улюблене</li>
+                        <li>Налаштування</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Допомога</h3>
+                    <ul>
+                        <li>Контакти</li>
+                        <li>Часті запитання</li>
+                        <li>Правила та умови</li>
+                        <li>Політика конфіденційності</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>EcoBazar</h3>
+                    <ul>
+                        <li>Про нас</li>
+                        <li>Магазин</li>
+                        <li>Продукція</li>
+                        <li>Відстежити замовлення</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-insta">
+                <h3>Instagram</h3>
+                <div class="instagram-grid">
+                    <img src="img/footer-img/insta1.jpg" alt="Instagram 1">
+                    <img src="img/footer-img/insta2.jpg" alt="Instagram 2">
+                    <img src="img/footer-img/insta3.jpg" alt="Instagram 3">
+                    <img src="img/footer-img/insta4.jpg" alt="Instagram 4">
+                    <img src="img/footer-img/insta5.jpg" alt="Instagram 5">
+                    <img src="img/footer-img/insta6.jpg" alt="Instagram 6">
+                    <img src="img/footer-img/insta7.jpg" alt="Instagram 7">
+                    <img src="img/footer-img/insta8.jpg" alt="Instagram 8">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>EcoBazar eCommerce &copy; 2021 Всі права захищено</p>
+            <div class="footer-payment">
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#applePay"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#visa"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#discover"></use>
+                    </svg>
+                    <svg width="45" height="32">
+                        <use xlink:href="img/sprite.svg#masterCard"></use>
+                    </svg>
+                    <svg width="65" height="32">
+                        <use xlink:href="img/sprite.svg#secure"></use>
+                    </svg>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/script-details.js"></script>
+</body>
+</html>
