@@ -619,16 +619,16 @@ h2 {
 }
 
 .banner.milk {
-    background-image: url('/img/background/BG3.jpg');
+    background-image: url('../img/background/BG3.jpg');
 }
 
 .banner.drink {
-    background-image: url('/img/background/BG2.jpg');
+    background-image: url('../img/background/BG2.jpg');
     color: #002603;
 }
 
 .banner.breakfast {
-    background-image: url('/img/background/BG1.jpg');
+    background-image: url('../img/background/BG1.jpg');
     color: #002603;
 }
 
@@ -2335,7 +2335,7 @@ footer {
         display: block;
         padding: 30px 300px;
         max-height: 120px;
-        background-image: url(/img/background/Breadcrumbs.png);
+        background-image: url(../img/background/Breadcrumbs.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -2347,7 +2347,7 @@ footer {
 
     .discount-shop {
         display: block;
-        background-image: url(/img/background/discount-bg.jpg);
+        background-image: url(../img/background/discount-bg.jpg);
         background-position: center;
         background-position-y: 55px;
         border-radius: 12px;
@@ -3268,3 +3268,4 @@ footer {
         margin-bottom: 24px;
     }
 }
+
