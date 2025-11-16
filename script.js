@@ -13,6 +13,15 @@ burger.addEventListener("click", () => {
     : "none";
 });
 
+const categoriesBtn = document.querySelector('.categories');
+const categoriesDropdown = document.querySelector('.categories-dropdown');
+
+if (categoriesBtn && categoriesDropdown) {
+    categoriesBtn.addEventListener('click', () => {
+        categoriesDropdown.classList.toggle('active');
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.querySelector(".modal-window");
   const closeBtn = document.querySelector(".close-btn");
@@ -41,24 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
 const animateBlocks = (selector, animationClass) => {
   const blocks = document.querySelectorAll(selector);
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(animationClass);
-        } else {
-          entry.target.classList.remove(animationClass);
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-    }
-  );
+  const checkVisibility = () => {
+    const windowHeight = window.innerHeight;
 
-  blocks.forEach((block) => {
-    observer.observe(block);
-  });
+    blocks.forEach((block) => {
+      const rect = block.getBoundingClientRect();
+      const visiblePart = rect.top < windowHeight * 0.93 && rect.bottom > windowHeight * 0.2;
+
+      if (visiblePart) {
+        block.classList.add(animationClass);
+      } else {
+        block.classList.remove(animationClass);
+      }
+    });
+  };
+
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('resize', checkVisibility);
+  checkVisibility();
 };
 
 animateBlocks(".product-card", "fade-in-up");
@@ -66,22 +75,24 @@ animateBlocks(".testimonial-card", "scale-in");
 animateBlocks(".blog-card", "fade-in-left");
 
 document.addEventListener("DOMContentLoaded", function () {
-  const endDate = new Date("2025-11-16T23:59:59");
-
   const timerBoxes = document.querySelectorAll(".timer-box .time");
+  
+  if (timerBoxes.length > 0 && typeof countdown === 'function') {
+    const endDate = new Date("2025-11-25T23:59:59");
 
-  function updateTimer() {
-    const now = new Date();
-    const timeLeft = countdown(now, endDate);
+    function updateTimer() {
+      const now = new Date();
+      const timeLeft = countdown(now, endDate);
 
-    timerBoxes[0].textContent = String(timeLeft.days).padStart(2, "0");
-    timerBoxes[1].textContent = String(timeLeft.hours).padStart(2, "0");
-    timerBoxes[2].textContent = String(timeLeft.minutes).padStart(2, "0");
-    timerBoxes[3].textContent = String(timeLeft.seconds).padStart(2, "0");
+      timerBoxes[0].textContent = String(timeLeft.days).padStart(2, "0");
+      timerBoxes[1].textContent = String(timeLeft.hours).padStart(2, "0");
+      timerBoxes[2].textContent = String(timeLeft.minutes).padStart(2, "0");
+      timerBoxes[3].textContent = String(timeLeft.seconds).padStart(2, "0");
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
   }
-
-  setInterval(updateTimer, 1000);
-  updateTimer();
 });
 
 
@@ -114,7 +125,3 @@ dots.forEach((dot, i) => {
         showSlide(currentSlide);
     });
 });
-
-
-
-
