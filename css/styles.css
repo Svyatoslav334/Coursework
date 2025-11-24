@@ -6464,7 +6464,7 @@ footer {
     position: relative;
 }
 
-.banner-content {
+.banner-content-single {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6476,7 +6476,7 @@ footer {
     z-index: 1;
 }
 
-.banner-content h3 {
+.banner-content-single h3 {
     margin: 0;
     font-size: 12px;
     font-weight: 500;
@@ -6485,7 +6485,7 @@ footer {
     text-transform: uppercase;
 }
 
-.banner-content p {
+.banner-content-single p {
     margin: 0;
     font-size: 28px;
     font-weight: 700;
@@ -6493,13 +6493,13 @@ footer {
     line-height: 1.2;
 }
 
-.banner-content span {
+.banner-content-single span {
     font-size: 14px;
     color: #ffc107;
     font-weight: 600;
 }
 
-.banner-content button {
+.banner-content-single button {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-top: 8px;
@@ -6522,14 +6522,14 @@ footer {
     transition: all 0.3s ease;
 }
 
-.banner-content button:hover {
+.banner-content-single button:hover {
     background-color: #00a852;
     -webkit-transform: translateX(4px);
         -ms-transform: translateX(4px);
             transform: translateX(4px);
 }
 
-.banner-content button::after {
+.banner-content-single button::after {
     content: '→';
     font-size: 16px;
 }
