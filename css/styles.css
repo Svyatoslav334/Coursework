@@ -1555,8 +1555,9 @@ header.scrolled {
     gap: 20px;
 }
 
-.subscribe-logo img {
-    width: 100px;
+.subscribe-logo {
+    width: 100%;
+    max-width: 183px;
     height: auto;
 }
 
@@ -3685,6 +3686,68 @@ footer {
     margin: 20px;
 }
 
+.pb-customer-feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.review-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-content {
+    width: 100%;
+}
+
+.review-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.review-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.review-time {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.review-text {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #444;
+}
+
+.load-more {
+    width: 140px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 30px;
+    background: #67b446;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px auto 0;
+    display: block;
+}
+
 .pd-video {
     margin-top: 28px;
     display: -webkit-box;
@@ -3863,6 +3926,18 @@ footer {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         gap: 32px;
+    }
+    .review-item {
+        gap: 20px;
+    }
+
+    .review-avatar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .review-text {
+        font-size: 16px;
     }
 
 }
@@ -4705,8 +4780,8 @@ footer {
 .feature-icon {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 40px;
-    height: 40px;
+    width: 72px;
+    height: 72px;
     background-color: #d4f4dd;
     border-radius: 50%;
     display: -webkit-box;
@@ -4719,11 +4794,6 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     color: #00b207;
-}
-
-.feature-icon svg {
-    width: 20px;
-    height: 20px;
 }
 
 .feature-text h4 {
@@ -6447,7 +6517,7 @@ footer {
 }
 
 .blog-sale-banner {
-    background-image: url('/img/blog-img/blog-bg.webp');
+    background-image: url('../img/blog-img/blog-bg.webp');
     background-size: cover;
     background-position:center;
     border-radius: 12px;
@@ -6823,23 +6893,23 @@ footer {
         padding: 32px 40px;
     }
 
-    .banner-content {
+    .banner-content-single {
         max-width: 50%;
     }
 
-    .banner-content h3 {
+    .banner-content-single h3 {
         font-size: 13px;
     }
 
-    .banner-content p {
+    .banner-content-single p {
         font-size: 36px;
     }
 
-    .banner-content span {
+    .banner-content-single span {
         font-size: 15px;
     }
 
-    .banner-content button {
+    .banner-content-single button {
         padding: 14px 28px;
         font-size: 15px;
         margin-top: 12px;
@@ -6912,10 +6982,6 @@ footer {
         gap: 30px;
     }
 
-    .blog-content {
-        width: 70%;
-    }
-
     .post-title {
         font-size: 28px;
     }
@@ -6954,25 +7020,25 @@ footer {
         padding: 40px 56px;
     }
 
-    .banner-content {
+    .banner-content-single {
         max-width: 45%;
     }
 
-    .banner-content h3 {
+    .banner-content-single h3 {
         font-size: 13px;
         letter-spacing: 1.5px;
     }
 
-    .banner-content p {
+    .banner-content-single p {
         font-size: 42px;
     }
 
-    .banner-content span {
+    .banner-content-single span {
         font-size: 16px;
         margin-top: 4px;
     }
 
-    .banner-content button {
+    .banner-content-single button {
         padding: 16px 32px;
         font-size: 16px;
         margin-top: 16px;
