@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const timerBoxes = document.querySelectorAll(".timer-box .time");
   
   if (timerBoxes.length > 0 && typeof countdown === 'function') {
-    const endDate = new Date("2025-11-25T23:59:59");
+    const endDate = new Date("2025-12-25T23:59:59");
 
     function updateTimer() {
       const now = new Date();
